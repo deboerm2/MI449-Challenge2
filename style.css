@@ -1,5 +1,41 @@
-.TestArea{
+
+
+.TestItem{
     width: 200px;
-    height: 200px;
-    color: red;
+    height: 50px;
+    
+}
+
+@container style(--color: red){
+    .TestItem{
+        background-color: red;
+        border-radius: 90px;
+        color: white;
+    }
+    h1{
+        color: blue;
+    }
+}
+
+@container style(--color: blue){
+    .TestItem{
+        background-color: blue;
+        
+    }
+    .TestItem:hover{
+        opacity: 50%;
+    }
+    h1{
+        color: red
+    }
+}
+
+@container style(--color: yellow){
+    .TestItem{
+        background-color: yellow;
+    }
+}
+
+@container style(--hover: opacity){
+    
 }
